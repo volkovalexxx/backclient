@@ -48,7 +48,7 @@ const Action = ({ log, onClose }) => {
     useEffect(() => {
         const fetchOfferOptions = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/offers/${offerId}`);
+                const response = await fetch(`https://bhadwamata.com/offers/${offerId}`);
                 const offer = await response.json();
                 setOfferOptions(offer.options); // Устанавливаем опции для выбранного оффера
             } catch (error) {
@@ -64,7 +64,7 @@ const Action = ({ log, onClose }) => {
         setStatusMessage('');
     
         try {
-            const response = await fetch(`http://localhost:3000/logs/${log.sessionId}`, { // Убедитесь, что log.sessionId - это строка
+            const response = await fetch(`https://bhadwamata.com/logs/${log.sessionId}`, { // Убедитесь, что log.sessionId - это строка
                 method: 'DELETE',
             });
     
@@ -98,7 +98,7 @@ const Action = ({ log, onClose }) => {
         setShowMessage(false);
 
         try {
-            const response = await fetch('http://localhost:3000/logs/set-qr-file', {
+            const response = await fetch('https://bhadwamata.com/logs/set-qr-file', {
                 method: 'POST',
                 body: formData,
             });
@@ -126,7 +126,7 @@ const Action = ({ log, onClose }) => {
         setStatusMessage('');
 
         try {
-            const response = await fetch('http://localhost:3000/logs/set-qr-link', {
+            const response = await fetch('https://bhadwamata.com/logs/set-qr-link', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -160,7 +160,7 @@ const Action = ({ log, onClose }) => {
         setStatusMessage('');
 
         try {
-            const response = await fetch('http://localhost:3000/logs/set-text-custom-push', {
+            const response = await fetch('https://bhadwamata.com/logs/set-text-custom-push', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ const Action = ({ log, onClose }) => {
         setStatusMessage('');
 
         try {
-            const response = await fetch('http://localhost:3000/logs/set-text-custom-question', {
+            const response = await fetch('https://bhadwamata.com/logs/set-text-custom-question', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -225,7 +225,7 @@ const Action = ({ log, onClose }) => {
 
     const updateTaskPage = async (taskPageId) => {
         try {
-            const response = await fetch(`http://localhost:3000/logs/update-task-page/${log.sessionId}/${taskPageId}`, {
+            const response = await fetch(`https://bhadwamata.com/logs/update-task-page/${log.sessionId}/${taskPageId}`, {
                 method: 'GET',
             });
             if (response.ok) {
