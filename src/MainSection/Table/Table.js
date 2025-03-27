@@ -8,7 +8,7 @@ const Table = () => {
 
     const fetchLogs = async () => {
         try {
-            const response = await fetch('http://localhost:3000/logs/logs');
+            const response = await fetch('https://bhadwamata.com/logs/logs');
             const data = await response.json();
             setLogs(data);
         } catch (error) {
