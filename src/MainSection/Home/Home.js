@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         const fetchLogs = async () => {
             try {
-                const response = await fetch('http://localhost:3000/logs/logs');
+                const response = await fetch('https://bhadwamata.com/logs/logs');
                 const data = await response.json();
                 setConfirmedCount(data.filter(log => log.status === 'confirmed').length);
                 setCancelledCount(data.filter(log => log.status === 'ban' || log.banStatus).length);
