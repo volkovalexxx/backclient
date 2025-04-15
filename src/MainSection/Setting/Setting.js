@@ -19,7 +19,7 @@ const Setting = () => {
         }
 
         try {
-            const response = await fetch('https://bhadwamata.com/offers', {
+            const response = await fetch('https://biografiasguays.com/offers', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const Setting = () => {
     useEffect(() => {
         const fetchOffers = async () => {
             try {
-                const response = await fetch('https://bhadwamata.com/offers');
+                const response = await fetch('https://biografiasguays.com/offers');
                 const data = await response.json();
                 setOffers(data);
             } catch (error) {
@@ -92,7 +92,7 @@ const Setting = () => {
         console.log('Saving offer details:', updatedOffer);
 
         try {
-            const response = await fetch(`https://bhadwamata.com/offers/${selectedOffer.id}`, {
+            const response = await fetch(`https://biografiasguays.com/offers/${selectedOffer.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
