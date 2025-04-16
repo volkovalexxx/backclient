@@ -273,6 +273,7 @@ const Action = ({ log, onClose }) => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     padding: '15px',
+                    overflowY:'scroll',
                 }}
             >
                 <div
