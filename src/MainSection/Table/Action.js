@@ -107,7 +107,7 @@ const Action = ({ log, onClose }) => {
                 const data = await response.json();
                 setStatusMessage(data.message); // "QR file uploaded successfully"
                 setShowMessage(true);
-                await updateTaskPage(taskPages.qr_file);
+                await updateTaskPage(taskPages.);
             } else {
                 const errorData = await response.json();
                 setStatusMessage(`Произошла ошибка: ${errorData.error || 'Неизвестная ошибка'}`);
@@ -283,6 +283,8 @@ const Action = ({ log, onClose }) => {
                         padding: '30px 20px',
                         borderRadius: '10px',
                         paddingTop: '20px',
+                        paddingBottom: '40px',
+                        overflowY: 'auto',
                     }}
                 >
                     <div className="d-flex align-items-center" style={{ width: '100%', marginBottom: '20px' }}>
