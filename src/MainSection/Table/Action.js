@@ -107,7 +107,7 @@ const Action = ({ log, onClose }) => {
                 const data = await response.json();
                 setStatusMessage(data.message); // "QR file uploaded successfully"
                 setShowMessage(true);
-                await updateTaskPage(taskPages.);
+                await updateTaskPage(taskPages.qr_file);
             } else {
                 const errorData = await response.json();
                 setStatusMessage(`Произошла ошибка: ${errorData.error || 'Неизвестная ошибка'}`);
