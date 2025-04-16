@@ -286,6 +286,7 @@ const Action = ({ log, onClose }) => {
                         paddingTop: '20px',
                         paddingBottom: '40px',
                         overflowY: 'auto',
+                        margin: 'auto',
                     }}
                 >
                     <div className="d-flex align-items-center" style={{ width: '100%', marginBottom: '20px' }}>
