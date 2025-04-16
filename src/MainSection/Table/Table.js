@@ -40,7 +40,7 @@ const Table = () => {
     };
 
     return (
-        <section id="table-section" style={{ width: '100%' }}>
+        <section id="table-section" style={{ width: '100%', marginBottom: '50px', height: '100vh' }}>
             <div style={{ width: '100%', height: '500px', background: 'rgba(0,0,0,0.18)', boxShadow: 'inset 0px 0px 20px rgba(3,0,128,0.69)', borderRadius: '6px', padding: '10px' }}>
                 <div style={{ height: '100%', overflowY: 'auto' }}>
                 <div style={{ padding: '5px' }}>
